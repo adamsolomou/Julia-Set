@@ -9,13 +9,13 @@ CPPFLAGS += -Wno-unused-parameter
 CPPFLAGS += -I include
 
 # Make it run fast
-# CPPFLAGS += -DNDEBUG=1 -O3
+CPPFLAGS += -DNDEBUG=1 -O3
 
 # Enable pthreads
 CPPFLAGS += -pthread
 
 # Link in the TBB libraries
-# LDLIBS += -ltbb
+LDLIBS += -ltbb
 
 
 # Define the sources for the various julia engines
