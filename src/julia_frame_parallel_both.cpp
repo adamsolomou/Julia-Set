@@ -13,7 +13,6 @@ void juliaFrameRender_ParallelBoth(
 
     tbb::parallel_for(0u, height, [&](unsigned y){
     	tbb::parallel_for(0u, width, [&](unsigned x){
-        //for(unsigned x=0; x<width; x++){
             // Map pixel to z_0
             complex_t z(-1.5f+x*dx, -1.5f+y*dy);
 
